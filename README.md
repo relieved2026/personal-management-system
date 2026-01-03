@@ -2,40 +2,29 @@
 <img src="github/logo.svg" width="100px"/>
 </p>
 
-<h1 align="center"> 个人信息管理系统<br/>后端</h1>
-<p align="center"><i> 你的个人数据中心。 </i></p>
-<p align="center"><i>This is only backend - read below!.</i></p>
+# 个人管理系统 (Personal Management System)
 
-<h3>Documentation / Demo</h3>
-<hr>
+### 后端
 
-<ul>
-<li><b>Frontend</b> - available <a href="https://github.com/Volmarg/personal-management-system-front"><b>here</b></a></li>
-<li><b>Documentation</b> - available <a href="https://volmarg.github.io"><b>here</b></a></li>
-<li><b>Demo</b> - click <a href="http://personal-management-system.pl/"><b>here </b></a>
-<ul>
-<li><b>Login:</b> admin@admin.admin</li>
-<li><b>Password/LockPassword:</b> admin</li>
-</ul>
-</li>
-</ul>
+这是管理个人数据的核心后端程序。 **注意：这仅包含后端代码！**
 
-<h3>Description</h3>
-<hr>
-<p align="justify">
-	It's easier to understand this web application when you think about a CMS (WordPress) or CRM (SugarCRM); the logic behind this system is very similar to those two. My PMS may offer fewer possibilities than those systems above, but it just does what I want it to do. Additionally, writing extensions is not too hard, depending on the logic required. Anyone with development knowledge can pretty much write their own extensions for personal needs.
-</p>
+### 文档 / 演示
 
-<h3>Reasoning/Purpose</h3>
-<hr>
+- **前端代码**：[点击此处获取](https://github.com/Volmarg/personal-management-system-front)
+- **官方文档**：[点击此处查看](https://volmarg.github.io/personal-management-system-docs/)
+- **演示地址**：[点击此处跳转](https://personal-management-system.pl/)
+  - **登录账号**：`admin@admin.admin`
+  - **密码/锁定密码**：`admin`
 
-<p align="justify">
-    I decided to create my own system, because playing around with tons of plugins for WordPress and writing customizations to some existing CRMs would take me as much time as writing my own system and by knowing the logic from its core it's easier for me to write extensions and add additional modules - whatever I need.
-</p>
+## 项目描述
 
-<p align="justify">
-    Secondly, there is no system like that, and I didn't wanted to end up integrating a docker based cloud with CMS. Furthermore I just need an application like that to keep organized and I'm tired of having some very personal data on OneDrive, other data on Google cloud, some notes here, and some notes there. The end goal is to have an application running on terminal or raspberry 24/7 plugged into my home network, without access to internet.
-</p>
+要理解这个 Web 应用程序，可以将其想象为一个 CMS（如 WordPress）或 CRM（如 SugarCRM）；该系统的逻辑与这两者非常相似。虽然我的 PMS 提供的功能可能比上述系统少，但它完全满足我的个人需求。此外，编写扩展插件并不难（取决于所需的逻辑），任何具备开发知识的人都可以根据个人需求编写自己的扩展。
+
+## 开发初衷与目的
+
+1. **定制化**：我决定创建自己的系统，因为折腾大量的 WordPress 插件或在现有的 CRM 上进行二次开发所花费的时间，几乎够我写一个全新的系统了。通过从核心层面了解其逻辑，我能更轻松地编写扩展并添加任何我需要的模块。
+2. **数据统一与隐私**：目前市面上没有完全符合我需求的系统。我不想把基于 Docker 的云系统与 CMS 强行整合。此外，我厌倦了将极其私人的数据分散存储（有的在 OneDrive，有的在 Google Cloud，有的在随手记）。
+3. **最终目标**：最终目标是让该应用在我的家庭网络中的树莓派（Raspberry Pi）或终端上 24/7 全天候运行，且**无需连接互联网**。
 
 <h3>Preview</h3>
 <hr>	
@@ -44,58 +33,38 @@
 <img src="github/contacts.png">
 <img src="github/calendar.png">
 
-<h3>Available options and modules</h3>
-<hr>
+## 可用选项与模块
 
-<ol>
-    <li><b style="display:inline">🎯 Todo/Goals</b> - <span align="justify"><i>Keep a track of your personal goals. You can use todolist to keep track of your goals progress or use payments submodule to keep an eye of the money amount that you want to collect for something.</i>
-        </span></li><br/>
-        <li><b>📖 Notes</b> <span align="justify"> - <i>Add any personal note to desired category. Here, you can keep any small information that you need; it can be either quick notes from phone call, bunch of information collected all around different pages or some links to things that you want to check somewhere later in future.</i></span></li><br/>
-        <li><b>📞 Contacts</b> - <span align="justify">You ever feel like You got dozens of phone contacts, emails etc. that you would like to get rid of, or make some safety backup in case you loose your phone? With this simple module you can organize your personal contacts.
-            </span></li><br/>
-        <li><b>🔑 Passwords</b> - <span align="justify"> <i>We all get to certain point when there are just way too many passwords to handle all around. Yeah we can keep them on email, pendrive, have special patterns in our heads, but lets face it sometimes it's just too many. With the Passwords module You can keep Your passwords encrypted in Your database, while on the frontend there is a copy button that will fetch You back the original password.
-        </i></span></li><br/>
-        <li><b>🏆 Achievements</b> - <span><i>Want to keep a track on anything cool you did - put in this module!</i></span></li><br/>
-        <li><b>📅 Schedules</b> - <span align="justify"><i>This module purpose is to keep track of any recurring things you got to do like for example car oil changes, payments, visits etc. Data added to the groups of schedules will be displayed on Dashboard and in the notification bell.</i></span></li><br/>
-        <li><b>🔁 Issues</b> - <span align="justify"><i>In this section You can track any ongiong/pending cases that have to be eventually resolved but it's not necessary required to keep constantly an eye on it - yet it might be required to go back one day in future to it so it allows to add subrecords of performed contacts and progress in given case</i></span></li><br/>	
-        <li><b>🌴 Travels</b> - <span align="justify"> <i>Having some ideas of places to visit but without any specific plans to it? Add it to this Module with google map link and some image so you can come back to it at any moment. May the image remind you why you were interested in this particular place.</i></span></li><br/>
-        <li><b>💸 Payments</b> - <span align="justify"> <i> Don't know how much money You spend on food, travels, domestic shopping? Simply from now on  add every shopping details to the list and let it do all the calculations, alongside with summary for given month. </i></span>
-        <p align="justify"><i>On the other hand if you would like to keep an eye of prices for particular products you can add information about them in Products Prices submodule (which I'm personally using while being in other country - on the moment when I'm writing this).</i></p>
-	<p align="justify"><i>Here You can also keep track of who owes You some money or who You owe something to by using <b>owed money</b> submodule.</i></p>	<p align="justify"><i><b>Bills</b> submodule allows saving information about money spent on certain things (separately from monthly payments for things like money spent on holiday etc.)</i></p></li><br/>
-	<li><b>🛒 Shopping</b> - <span align="justify"><i>You got plans to buy something in future? Add it to the list, and then just check it out,  maybe You will be able to buy this particular thing just now.</i></span></li><br/>
-    <li><b>💻 Job</b> - <span align="justify"><i>The Afterhours submodule is a nice way to keep an eye of all the afterhours you've made in work. With this you can also separate specified minutes/hours for certain goal. For example you need 24h for trip and 4h to do something. Just add some time to pre existing goal, create new one or leave it blank (will go to general purpose pool). Holidays submodule is a simple way to track down how many days did You used from yearly holidays pool.</i></span> </li><br/>
-    <li><b>📷 Images</b> - <span align="justify"><i>This module allows You to organize Your photos/scans/downloaded pics in form of masonry galleries. Clicking on image miniature will call lightbox gallery with possibility to rename, remove or download image. You can create as many galleries (folders) as You want.</i></span> </li><br/>	
-    <li><b>📁 Files</b> - <span align="justify"><i>Files uploaded for this module are visible in form of DataTable where You can see simple information about the file - that is: extension, filetype icon (if there is one defined for given type), file size. Files can be renamed, downloaded and removed from the gui.</i></span> </li><br/>		
-    <li><b>🎬 Video</b> - <span align="justify"><i>Got small video downloaded from internet or recorded on phone? That's a module to store it then - supports most popular web video formats.</i></span> </li><br/>		
-    <li><b>📑 Reports</b> - <span align="justify"><i>contains readonly reports created from already existing data in database</i></span> </li><br/>		
-</ol>
+- 🎯 **待办事项/目标 (Todo/Goals)**：追踪个人目标。可以使用清单记录进度，或使用支付子模块监控为某项支出筹集的资金。
+- 📖 **笔记 (Notes)**：为分类添加个人笔记。存放电话摘要、各处收集的信息或稍后阅读的链接。
+- 📞 **联系人 (Contacts)**：整理备份电话和邮箱，防止丢失。
+- 🔑 **密码管理 (Passwords)**：数据库中加密存储密码，前端提供一键解密复制按钮。
+- 🏆 **成就 (Achievements)**：记录你完成的酷事。
+- 📅 **日程表 (Schedules)**：追踪重复性事务（如汽车换油、缴费、预约等），会在仪表盘和通知铃铛中提醒。
+- 🔁 **事务追踪 (Issues)**：追踪进行中或待处理的案例，支持记录联系进展，方便日后回顾。
+- 🌴 **旅行 (Travels)**：记录旅行想法，支持添加 Google 地图链接和图片。
+- 💸 **账单支付 (Payments)**：记录食物、旅行、居家购物等开支并自动计算月度总结。包含“产品价格”子模块（对比不同地区物价）和“欠款管理”。
+- 🛒 **购物清单 (Shopping)**：记录未来想买的东西。
+- 💻 **工作 (Job)**：
+  - *加班子模块*：记录加班时长，可分配给特定目标（如：为了旅游攒够 24 小时假期）。
+  - *年假子模块*：追踪年度剩余假期。
+- 📷 **图片 (Images)**：以瀑布流画廊形式组织照片/扫描件，支持灯箱预览、重命名和下载。
+- 📁 **文件 (Files)**：以表格形式显示上传的文件，支持按扩展名显示图标，支持重命名、下载和删除。
+- 🎬 **视频 (Video)**：存储并播放常见的 Web 视频格式。
+- 📑 **报告 (Reports)**：基于数据库现有数据生成的只读报告。
 
-<h2>How to install/documentation</h2>
+------
 
-Check the official documentation: [here](https://volmarg.github.io/docs/getting-started/installation.html)
+## 安装与技术栈
 
-<h2>Future development plans</h2>
+- **安装步骤**：请参考 [官方文档](https://volmarg.github.io/personal-management-system-docs/)。
+- **技术框架**：后端基于 **Symfony (PHP)**，前端基于 **Vue.js**。
 
-<h3>Improvements</h3>
-<p>
-	<i>Overally I will just add some bug fixes/improvements/modules from time to time - anything that I will just need.</i>
-</p>	
-<hr>
+## 未来计划
 
-<h2>Support</h2>
+- **改进**：我会不定期添加 Bug 修复、改进和新模块——只要是我个人需要的。
+- **支持声明**：由于我有全职工作和个人事务，**无法保证提供技术支持**。本项目以 MIT 协议开源。欢迎提交 Issue 或提问，但我会优先开发我个人每天需要使用的功能。
 
-<p align="justify">
-    I cannot guarantee support. I've got a job, personal things etc, I'm just sharing my code/my application as MIT. However feel totally free to ask about something, write issues etc. As mentioned I'm using and I will use this application from now on daily so there might be some changes even good for me.
-</p>
+## 贡献与鸣谢
 
-<p align="justify">
-    As I'm working on it there will be some fixes, and new modules in future when I reach the point when I got all I need.
-</p>
-
-<h2>Tech / frameworks / solutions</h2>
-
-Check the official documentation: [here](https://volmarg.github.io/docs/technical/tech-stack.html)
-
-<h2>Contribution / special thanks</h2>
-
-Go here:  [here](https://volmarg.github.io/docs/other/contributors.html)
+- [查看贡献者列表](https://volmarg.github.io/personal-management-system-docs/docs/special-thanks.html)
