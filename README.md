@@ -2,8 +2,8 @@
 <img src="github/logo.svg" width="100px"/>
 </p>
 
-<h1 align="center"> Personal Management System<br/>Backend</h1>
-<p align="center"><i>Your central point for managing personal data.</i></p>
+<h1 align="center"> 个人信息管理系统<br/>后端/>h1>
+<p align="center"><i> 你的个人数据中心。 </i></p>
 <p align="center"><i>This is only backend - read below!.</i></p>
 
 <h3>Documentation / Demo</h3>
